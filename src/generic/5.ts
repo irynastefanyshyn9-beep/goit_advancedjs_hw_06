@@ -1,11 +1,20 @@
-/*
-  Вам потрібно реалізувати інтерфейс KeyValuePair, який описує пару ключ-значення. 
-  Використовуйте generics, щоб цей інтерфейс міг працювати з будь-якими типами ключів та значень.
-*/
-
-interface KeyValuePair {
-  key;
-  value;
+interface KeyValuePair<K, V> {
+  key: K;
+  value: V;
 }
+
+const entry1: KeyValuePair<number, string> = {
+  key: 1,
+  value: 'Active'
+};
+
+const entry2: KeyValuePair<string, boolean> = {
+  key: 'isPremium',
+  value: true
+};
+
+console.log('--- Generic Task 5 ---');
+console.log('Entry 1:', entry1);
+console.log('Entry 2:', entry2);
 
 export {};

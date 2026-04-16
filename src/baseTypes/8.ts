@@ -1,8 +1,10 @@
-/*
-  Створіть тип "Gender", використовуючи union type, 
-  який може містити значення "male", "female". Створіть змінну myGender цього типу.
-*/
+type Gender = 'male' | 'female';
 
-const myGender;
+let myGender: Gender;
+
+myGender = 'male'; 
+
+console.log('--- Generic Task 8 ---');
+console.log('Selected gender:', myGender);
 
 export {};

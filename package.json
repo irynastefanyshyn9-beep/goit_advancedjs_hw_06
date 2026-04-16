@@ -2,6 +2,12 @@
   "name": "typescript-homework-module-2",
   "version": "1.0.0",
   "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "tsc -w",
+    "dev": " npx live-server"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
